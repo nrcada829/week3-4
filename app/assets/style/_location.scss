@@ -1,0 +1,127 @@
+.location{
+    .container{
+        @include pad(){
+            max-width: 690px;
+            padding: 60px 0 76px 0;
+        }
+        @include mobile(){
+            max-width: 345px;
+            padding: 28px 0 40px 0;
+        }
+    }
+    h2{
+        font-size: 48px;
+        line-height: 80px;
+        font-weight: bold;
+        border-left: 8px solid $primary;
+        margin-bottom: 60px;
+        color: $dark;
+        @include pad(){
+            margin-bottom: 40px;
+            border-left: 4px solid $primary;
+            line-height: 67px;
+        }
+        @include mobile(){
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+    }
+    .area{
+        @include pad(){
+            margin-bottom: 24px;
+        }
+        @include mobile(){
+            margin-bottom: 20px;
+        }
+        .label{
+            font-size: 24px;
+            line-height: 30px;
+            margin-right: 20px;
+            @include pad(){
+                font-size: 16px;
+            }
+            @include mobile(){
+                font-size: 14px;
+                margin-right: 12px;
+            }
+        }
+        .select{
+            width: 324px;
+            height: 45px;
+            border: 1px solid $info;
+            padding: 8px 0 8px 19px;
+            font-size: 18px;
+            line-height: 26px;
+            color: $secondary;
+            @include pad(){
+                width: 237px;
+                height: 46px;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 11px 0 11px 16px;
+            }
+            @include mobile(){
+                width: 277px;
+                height: 36px;
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    }
+}
+.store .store-items{
+    width: 31.33333%;
+    margin: 0 1% 32px;
+    color: $dark;
+    @include pad(){
+        width: 48%;
+        margin: 0 1% 20px 1%;
+    }
+    @include mobile(){
+        width: 100%;
+        margin: 0 0 16px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 36px;
+        padding: 12px 0 12px 24px;
+        border: 1px solid $secondary-100;
+        @include pad(){
+            font-size: 16px;
+            padding: 8px 0 8px 24px;
+            line-height: 24px;
+        }
+    }
+    .store-contact{
+        padding: 16px 24px;
+        border: 1px solid $secondary-100;
+        font-size: 20px;
+        @include pad(){
+            font-size: 14px;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        a{
+            color: $dark;
+            &:hover{
+                color: rgba(0,0,0,.6);
+            }
+        }
+    }
+    .news{
+        text-align: center;
+        background-color: $dark;
+        border: 1px solid $secondary-100;
+        padding: 20px 0;
+        @include pad(){
+            padding: 16px 0;
+        }
+        &:hover{
+            background-color: $primary;
+        }
+    }
+}

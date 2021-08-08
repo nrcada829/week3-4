@@ -1,0 +1,374 @@
+.banner{
+    height: 840px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    @include mobile(){
+        height: 394px;
+    }
+    .container{
+        @include pad(){
+            max-width: 690px;
+        }
+        @include mobile(){
+            max-width: 345px;
+        }
+    }
+    .title{
+        color: $primary-100;
+        text-align: right;
+        font-size: 64px;
+        line-height: 96px;
+        font-weight: bold;
+        padding-top: 348px;
+        @include pad(){
+            padding-top: 372px;
+            font-size: 48px;
+            line-height: 72px;
+        }
+        @include mobile(){
+            font-size: 32px;
+            padding-top: 164px;
+            line-height: 45px;
+        }
+        .subtitle{
+            font-size: 36px;
+            line-height: 54px;
+            font-weight: normal;
+            @include pad(){
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @include mobile(){
+                font-size: 16px;
+            }
+        }
+    }
+}
+.feature{
+    background-color: $success;
+    padding: 60px 0 80px;
+    @include pad(){
+        padding: 40px 0 56px;
+    }
+    @include mobile(){
+        padding-top: 32px;
+    }
+    .container{
+        @include pad(){
+            max-width: 690px;
+        }
+        @include mobile(){
+            max-width: 345px;
+        }
+    }
+    h3{
+        color: $primary-100;
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        font-weight: bold;
+        @include pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 40px;
+        }
+        @include mobile(){
+            font-size: 28px;
+            margin-bottom: 28px;
+        }
+    }
+    .feature-items{
+        li{
+            width: 22%;
+            @include pad(){
+                width: 40%;
+            }
+            @include mobile(){
+                width: 80%;
+                margin-bottom: 40px;
+            }
+        }
+        h4{
+            font-size: 24px;
+            line-height: 36px;
+            color: $primary-100;
+            font-weight: bold;
+        }
+        p{
+            line-height: 24px;
+        }
+    }
+}
+.glasses{
+    padding: 60px 0 80px;
+    @include pad(){
+        padding: 40px 0 48px;
+    }
+    @include mobile(){
+        padding: 32px 0;
+    }
+    .container{
+        @include pad(){
+            max-width: 720px;
+        }
+        @include mobile(){
+            max-width: 375px;
+        }
+    }
+    h3{
+        font-size: 48px;
+        line-height: 72px;
+        color: $primary-100;
+        text-align: center;
+        font-weight: bold;
+        @include pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+        @include mobile(){
+            font-size: 20px;
+            line-height: 29px;
+            margin-bottom: 20px;
+        }
+    }
+    .glasses-items .glasses-img{
+        width: 60%;
+        @include pad(){
+            margin: 0 32px 0 0;
+        }
+        @include mobile(){
+            width: 100%;
+        }
+    }
+    .glasses-items li{
+        @include pad(){
+            flex-direction: row;
+            margin-bottom: 8px;
+        }
+        @include mobile(){
+            position: relative;
+        }
+        p{
+            color: $layoutColor;
+            font-size: 48px;
+            line-height: 72px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            @include pad(){
+                font-size: 28px;
+                line-height: 37px;
+            }
+            @include mobile(){
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    .glasses-icon{
+        margin-right: 10px;
+        width: 44px;
+        @include pad(){
+            width: 40px;
+        }
+        @include mobile(){
+            width: 36px;
+        }
+    }
+}
+.cooperateDesign{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0 80px 0;
+    @include pad(){
+        padding: 40px 0 56px;
+    }
+    @include mobile(){
+        padding: 32px 0 24px;
+    }
+    h3{
+        color: #fff;
+        font-size: 48px;
+        line-height: 72px;
+        text-align: center;
+        font-weight: bold;
+        @include pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+        @include mobile(){
+            font-size: 20px;
+            line-height: 29px;
+            margin-bottom: 20px;
+        }
+    }
+    .cooperateDesign-items li{
+        width: 49%;
+        position: relative;
+        @include mobile(){
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 72px;
+            line-height: 108px;
+            color: $layoutColor;
+            background-color: rgba(255,255,255,.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-weight: bold;
+            @include pad(){
+                font-size: 32px;
+                line-height: 43px;
+            }
+        }
+    }
+}
+.customer-recommendation{
+    padding: 60px 0 80px;
+    @include pad(){
+        padding: 40px 0 24px;
+    }
+    @include mobile(){
+        padding: 32px 0 16px;
+    }
+    h3{
+        font-size: 48px;
+        line-height: 72px;
+        color: $primary-100;
+        text-align: center;
+        font-weight: bold;
+        @include pad(){
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+        @include mobile(){
+            font-size: 20px;
+            line-height: 29px;
+            margin-bottom: 20px;
+        }
+    }
+    .recommendation-card{
+        width: 23%;
+        height: 460px;
+        position: relative;
+        border: 1px solid $info-100;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px #00000029;
+        @include pad(){
+            width: 47%;
+            margin-bottom: 16px;
+        }
+        @include mobile(){
+            width: 95%;
+            margin-bottom: 8px;
+        }
+    }
+    .recommendation-body{
+        padding: 16px;
+        font-size: 14px;
+        line-height: 20px;
+        @include pad(){
+            padding: 16px 24px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        span{
+            color: $info-900;
+            position: absolute;
+            bottom: 16px;
+        }
+    }
+}
+.index-contact{
+    padding: 60px 0 80px;
+    background-color: $pink;
+    @include pad(){
+        padding: 40px 0 56px;
+    }
+    @include mobile(){
+        padding: 30px 0 40px;
+    }
+    .form{
+        width: 60%;
+        margin: 0 auto;
+        @include mobile(){
+            width: 100%;
+        }
+    }
+    h3{
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        text-align: center;
+        @include pad(){
+            font-size: 32px;
+            line-height: 48px;
+        }
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        @include pad(){
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .form-label{
+        line-height: 20px;
+        margin-bottom: 4px;
+        display: block;
+        @include pad(){
+            font-size: 14px;
+        }
+    }
+    .form-input{
+        width: 100%;
+        display: block;
+        padding: 12px 16px;
+        background-color: rgba(255,255,255,.1);
+        border: 1px solid #000;
+        @include pad(){
+            margin-bottom: 8px;
+        }
+    }
+    .form-textarea{
+        height: 136px;
+        resize: none;
+    }
+    .form-checkbox{
+        @include pad(){
+            margin-bottom: 20px;
+        }
+    }
+    .form-submit{
+        margin: 0 auto;
+        display: block;
+        padding: 16px 143px;
+        background-color: $layoutColor;
+        border: none;
+        color: #fff;
+        &:hover{
+            background-color: #915553;
+        }
+        @include pad(){
+            font-size: 14px;
+            padding: 10px 77px;
+        }
+        @include mobile(){
+            padding: 8px 55px;
+        }
+    }
+}
